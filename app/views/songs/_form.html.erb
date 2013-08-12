@@ -1,0 +1,22 @@
+<% if @song.errors.present? %>
+  <ul>
+  	<% @song.errors.full_messages.each do |message| %>
+  	<li><%= message %></li>
+   <% end %>
+  </ul>
+<% end %>
+
+
+<%= form_for @song do |f| %>
+<table>
+	<tr>
+		<td> Title </td>
+		<td>:</td>
+		<td><%= f.text_field :title %> </td>
+	</tr>
+
+	<tr>
+		<td colspan='3'><%= f.submit %></td>
+	</tr>
+</table>
+<% end %>

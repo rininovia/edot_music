@@ -3,8 +3,8 @@
 	<% @artists.each do |artist| %>
 	<li><%= link_to artist.name, artist_path(artist) %>
 		<%= link_to artist.artist, artist_path(artist) %>
-        <%= link_to 'Edit', edit_artist_path(artist) %>
-        <%= link_to 'Delete', artist_path(artist), method: :delete %>
+        <%= link_to 'Edit', edit_artist_path(artist), class: "btn btn-info" %> |
+        <%= link_to 'Delete', artist_path(artist), class: "btn btn-info" %>
 	</li>
 	<% end %>
 </ul>

@@ -1,0 +1,10 @@
+<h1>List All Title And Artist</h1>
+<ul>
+	<% @artists.each do |artist| %>
+	<li><%= link_to download.name, artist_path(artist) %>
+		<%= link_to artist.artist, artist_path(artist) %>
+        <%= link_to 'Edit', edit_artist_path(artist) %>
+        <%= link_to 'Delete', artist_path(artist), method: :delete %>
+	</li>
+	<% end %>
+</ul>

@@ -8,5 +8,4 @@ class CreateArtists < ActiveRecord::Migration
     end
  add_index :albums, :slug, unique: true
   end
-
 end

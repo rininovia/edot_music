@@ -3,8 +3,8 @@
 	<% @albums.each do |album| %>
 	<li><%= link_to album.title, album_path(album) %>
 		<%= link_to album.album, album_path(album) %>
-        <%= link_to 'Edit', edit_album_path(album) %>
-        <%= link_to 'Delete', album_path(album), method: :delete %>
+        <%= link_to 'Edit', edit_album_path(album), class: "btn btn-warning" %> |
+        <%= link_to 'Delete', album_path(album), class: "btn btn-warning" %>
 	</li>
 	<% end %>
 </ul>

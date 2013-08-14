@@ -1,47 +1,36 @@
 <%= form_tag home_index_path do %>
-<h1> Music Editing</h1>
   <div class="row">
     <div class="col-lg-3">
     <a href="#" class="thumbnail">
-      <%= image_tag '/assets/rails.png' %>
+      <%= image_tag '/assets/musik.jpg' %>
     </a>
     </div>
   </div>
-         <ul class="nav nav-tabs nav-justified">
-           <li><a class="navbar-brand" href="#">Home</a></li>
-           <li class="dropdown"><a class="dropdown-toggle"data-toggle="dropdown" href="#">Editing<b class="caret"></b>
-           </a></li>
-           <li><a class="nav-bar-brand" href="#">Albums</a></li>
-           <li><a class="nav-bar-brand" href="#">Artist</a></li>
-           <li><a class="nav-bar-brand" href="#">Community</a></li>
-            <ul class="dropdown-menu">
-             <li><a href="#">Potong lagu</a></li>
-             <li><a href="#">Ganti suara</a></li>
-           </ul>
-         </ul>
-   	<h2>Costumer Login</h2>
-     <div class="form-group"></br>
+     <h1 class= "tengah"> Music Editing</h1>
+     <div class="form-group mail"></br>
       <label for="inputEmail" class="col-lg-2 control-label">Email</label>
       <div class="col-lg-10">
       <input type="text" class="form-control" id="inputEmail" placeholder="Email">
      </div>
     </div>
-       <div class="form-group">
+       <div class="form-group mail">
          <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-        <div class="col-lg-10">
+        <div class="col-lg-10 mail">
         <input type="password" class="form-control" id="inputPassword" placeholder="Password">
         </div>
      </div>
-        <div class="form-group">
+        <div class="form-group mail">
          <div class="col-lg-offset-2 col-lg-10">
+          <div class="check mail"
            <div class="checkbox">
            <label>
           <input type="checkbox"> Remember me
         </label>
       </div>
+      </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group mail">
     <div class="col-lg-offset-2 col-lg-10">
       <button type="submit" class="btn btn-primary">Sign in</button>
       <button type="submit" class="btn btn-primary">Sign up</button>

@@ -1,10 +1,29 @@
-<h1>List All Albums</h1>
+<div class="input-append kanan">
+            <input type="text" class="search-query" placeholder="Search">
+            </div>
+<%= image_tag '/assets/musikk.jpg' %>
+<ul class="nav nav-tabs nav-justified">
+           <li><a class="nav-bar-brand" href="#">Albums</a></li>
+           <li class="dropdown"><a class="dropdown-toggle"data-toggle="dropdown" href="#">Editing<b class="caret"></b>
+           </a></li>
+           <li><a class="nav-bar-brand" href="#">Artist</a></li>
+           <li><a class="nav-bar-brand" href="#">Community</a></li>
+           <li><a class="nav-bar-brand" href="#">Sig Out</a></li>
+            <ul class="dropdown-menu">
+             <li><a href="#">Potong lagu</a></li>
+             <li><a href="#">Ganti suara</a></li>
+           </ul>
+
+         </ul>
+
+
 <ul>
 	<% @albums.each do |album| %>
-	<li><%= link_to album.title, album_path(album) %>
-		<%= link_to album.album, album_path(album) %>
-        <%= link_to 'Edit', edit_album_path(album), class: "btn btn-warning" %> |
-        <%= link_to 'Delete', album_path(album), class: "btn btn-warning" %>
+	<li><%= image_tag '/assets/msic.jpg' %><br/></li>
+		<li><%= link_to album.title, album_path(album) %>
+		<%= link_to album.album, album_path(album) %><br/>
+        <%= link_to 'Edit', edit_album_path(album), class: "btn btn-primary" %> |
+        <%= link_to 'Delete', album_path(album), class: "btn btn-primary" %>
 	</li>
 	<% end %>
 </ul>
@@ -12,3 +31,4 @@
 <br/>
 
 <%= link_to 'New Album', new_album_path %>
+<body style='background-color:black;'>

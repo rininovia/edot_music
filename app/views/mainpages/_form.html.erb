@@ -1,0 +1,20 @@
+<%= form_tag home_index_path do %>
+  <div class="row">
+    <div class="col-lg-3">
+    <a href="#" class="thumbnail">
+      <%= image_tag '/assets/musik tangga lagu terbaru.jpg' %>
+    </a>
+    </div>
+  </div>
+     <ul class="nav nav-tabs nav-justified">
+           <li><a class="nav-bar-brand" href="#">Albums</a></li>
+           <li class="dropdown"><a class="dropdown-toggle"data-toggle="dropdown" href="#">Editing<b class="caret"></b>
+           </a></li>
+           <li><a class="nav-bar-brand" href="#">Artist</a></li>
+           <li><a class="nav-bar-brand" href="#">Community</a></li>
+            <ul class="dropdown-menu">
+             <li><a href="#">Potong lagu</a></li>
+             <li><a href="#">Ganti suara</a></li>
+           </ul>
+         </ul>
+<% end %>

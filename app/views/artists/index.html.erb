@@ -1,4 +1,6 @@
-<h1>List All Title And Artist</h1>
+<h3>Artist Indonesia</h3>
+
+<span class="label label-inverse">Top Single</span>
 <ul>
 	<% @artists.each do |artist| %>
 	<li><%= link_to artist.name, artist_path(artist) %>
@@ -9,6 +11,18 @@
 	<% end %>
 </ul>
 
-<br/>
-
 <%= link_to 'New Artist', new_artist_path %>
+
+
+<br/>
+<br/><span class="label label-inverse">Top Band</span>
+<% @artists.each do |artist| %>
+	<li><%= link_to artist.name, artist_path(artist) %>
+		<%= link_to artist.artist, artist_path(artist) %>
+        <%= link_to 'Edit', edit_artist_path(artist), class: "btn btn-info" %> |
+        <%= link_to 'Delete', artist_path(artist), class: "btn btn-info" %>
+    <% end %>
+<br/>
+<br/><%= link_to 'New Artist', new_artist_path %>
+
+  <body style='background-color:#e0ffff;'>
